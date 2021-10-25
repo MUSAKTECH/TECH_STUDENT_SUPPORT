@@ -1,0 +1,35 @@
+body{background-image: url(for2.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.admin{
+    box-shadow: 15px 5px 5px black;
+    margin-top: 100%;
+    background-color: white;
+    width: 300px;
+    height: 550px;
+    border-radius: 45px;
+    margin: auto;
+}
+.admin:hover{
+    background-color: purple;
+}
+.logo{
+    margin: auto;
+    width: 180px;
+}
+.form{
+    margin: 10px;
+    padding: 10px;
+}
+input[type="text"]{
+    border: none;
+    border-bottom: 1px solid black;
+    width: 100%;
+    outline: none;
+}
+.fgtpsc, .makep{
+    margin: 10px;
+    padding: 5px;
+    text-align: center;
+}

@@ -1,0 +1,77 @@
+.pic_container{width:104%; margin-top: -25px; height:100px; margin-left: -30px; background-color: #e58528;}
+.Acct_dsh{width: 100%; height: 100px; margin-top: 50px; opacity: 4.5;}
+h5{color: black; font-size: 14px; font-family: sans-serif;}
+h2{color: red; line-height: 2.9px; opacity: 7.5;}
+body{background-color:lightgrey; box-sizing: border-box;}
+.flex_container{display: flex; flex-direction: row;}
+.div_flex1{background-color: white; border-radius:3px; width: 33.33%; height: 100px; 
+   margin: 10px; padding: 20px; float: right;}
+
+
+.sidenav {height: 100%; width: 0; position: fixed; z-index: 1; top: 0; left: 0; background-color: white;
+overflow-x: hidden; transition: 0.5s; padding-top: 60px; display: inline-block;}
+
+.sidenav a {
+padding: 8px 8px 8px 32px;
+text-decoration: none;
+font-size: 20px;
+color:white;
+display: block;
+transition: 0.3s;
+
+}
+
+.sidenav a:hover {
+    display: block;
+    background-color: blue;
+}
+
+.sidenav .closebtn {
+position: absolute;
+top: 0;
+right: 25px;
+font-size: 36px;
+margin-left: 50px;
+}
+
+#main {
+transition: margin-left .5s;
+padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+.sidenav {padding-top: 15px;}
+.sidenav a {font-size: 18px;}
+}
+table {
+border-collapse: collapse;
+width: 100%;
+}
+
+th, td {
+padding: 11px;
+text-align: left;
+border-bottom: 1px solid #ddd;
+}
+
+tr:hover {background-color: gray;}
+tr:active.here{background-color: lightblue;}
+.Current_reg{color: black;}
+img{
+border-radius: 50%;
+background-color: red;
+width: 70px;
+height: 70px;
+float: right;
+/* margin: 20px; */
+margin-right: 150px;
+/* margin-top: -25px; */
+position: static;
+}
+.image_div{margin-top: -25px;}
+.spherical1{border-radius: 50%; background-color: red; width: 70px; height: 70px; float: right; margin: 20px; 
+margin-right: 150px; margin-top: 25px; position: static;}
+.spherical2{border-radius: 50%; background-color: orange; width: 70px; height: 70px; float: right; margin: 10px; 
+margin-top: 25px; position: static;} 
+.spherical3{border-radius: 50%; background-color:tomato; width: 70px; height: 70px; float:right ; margin: 20px; 
+margin-top: 25px;}
