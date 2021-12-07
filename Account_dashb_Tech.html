@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/fontawesome-free-6.0.0-beta2-web/css/all.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .pic_container{width:104%; margin-top: -25px; height:100px; margin-left: -30px;
+             background: linear-gradient(to bottom right, red, orange); }
+        .Acct_dsh{width: 100%; height: 100px; margin-top: 50px; opacity: 4.5;}
+        h5{color: black; font-size: 14px; font-family: sans-serif;}
+        h2{color: red; line-height: 2.9px; opacity: 7.5;}
+        body{background-color:lightgrey; box-sizing: border-box;}
+        .flex_container{display: flex; flex-direction: row;}
+        .div_flex1{background-color: white; border-radius:3px; width: 33.33%; height: 100px; 
+            margin: 10px; padding: 20px; float: right;}
+    
+        
+   .sidenav {height: 100%; width: 0; position: fixed; z-index: 1; top: 0; left: 0; background-color: white;
+    overflow-x: hidden; transition: 0.5s; padding-top: 60px; display: inline-block;}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    display: block;
+    transition: 0.3s;
+    
+}
+
+.sidenav a:hover {
+    color:red;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+    /* padding:30px; */
+    /* margin: auto; */
+}
+
+th, td {
+    padding: 11px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+tr:hover {background-color: gray;}
+tr:active.here{background-color: lightblue;}
+.Current_reg{color: black;}
+img{
+    border-radius: 50%;
+    background-color: red;
+    width: 70px;
+    height: 70px;
+    float: right;
+    /* margin: 20px; */
+    margin-right: 150px;
+    /* margin-top: -25px; */
+    position: static;
+}
+.image_div{margin-top: -25px;}
+.spherical1{border-radius: 50%; background-color: red; width: 70px; height: 70px; float: right; margin: 20px; 
+    margin-right: 150px; margin-top: 25px; position: static;}
+.spherical2{border-radius: 50%; background-color: orange; width: 70px; height: 70px; float: right; margin: 10px; 
+    margin-top: 25px; position: static;} 
+.spherical3{border-radius: 50%; background-color:tomato; width: 70px; height: 70px; float:right ; margin: 20px; 
+    margin-top: 25px;}
+
+    .dropdown-container {
+    display: none;
+    background-color: #262626;
+    padding-left: 8px;
+}
+
+/* Optional: Style the caret down icon */
+.fa-caret-down {
+    float: right;
+    padding-right: 8px;
+}
+
+/* Some media queries for responsiveness */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+
+.show {display: block;}
+.caret_drp{display: block; height: 100px; width: 100px; background-color: green; color: black; 
+    visibility: hidden;}
+    /* .caret_drp .click{visibility: visible;} */
+    /* .ima_spn{} */
+
+    </style>
+</head>
+<body>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <!-- <span><i class=""></i></span> -->
+        
+        <a href="Account_dashb_Tech.html">
+            <i class="fa fa-tachometer"></i>
+            <span id="">Dashboard</span>
+</a>
+<a href="student_profile.html">
+    <i class="fa fa-user-circle"></i>
+    <span id="">Profile</span>
+</a>
+        <a href="course reg_page.html">
+            <i class="fa fa-book"></i>
+    <span id="">Course Registration</span>
+            
+        </a>
+        <a href="bed_space.html">
+            <i class="fa fa-bed"></i>
+            <span id="">Bed Space</span>
+        </a>
+        <a href="#">
+            <i class="fa fa-pencil-square"></i>
+            <span id="">Exam pass</span>
+        </a>
+        <a href="#">
+            <i class="fa fa-table"></i>
+            <span id="">Exam Time-table</span>
+        </a>
+        <a href="internetacess_page.html">
+            <i class="fa fa-wifi"></i>
+            <span id="">Internet Access</span>
+        </a>
+        <a href="#">
+            <i class="fa fa-envelope"></i>
+            <span id="">My Email Address</span>
+        </a>
+        <a href="#">
+            <i class="fa fa-book"></i>
+            <span id="">Course History</span>
+            
+        </a>
+        <a href="#">
+            <i class="fa fa-book"></i>
+            <span id="">Courseware</span>
+        </a>
+        <a href="#">
+            <i class="fa fa-check-square"></i>
+            <span id=""> Assessments</span>
+           
+        </a>
+        <a href="result viewing_page.html">
+            <i class="fa fa-bar-chart"></i>
+            <span id="">Results</span>
+            
+        </a>
+        <a href="#">
+            <i class="fa fa-pencil-square"></i>
+            <span id="">E-exam</span>
+            
+        </a>
+        <a href="#">
+            <i class="fa fa-briefcase"></i>
+            <span id="">E-learning</span>
+            
+        </a>
+        <a href="#">
+            <i class="fa fa-briefcase"></i>
+            <span id="">E-library</span>
+        </a>
+       
+           
+                <!-- <a href="">
+                    
+                    <i class="fa fa-briefcase"></i>
+                    <span> <i class="fa fa-chevron-right"></i></span>
+                    <button class="dropdown-btn">Download
+                        <i class="fa fa-caret-down"></i>
+                      </button>
+                    <div class="dropdown-container">
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
+                      </div>
+                </a> -->
+              </div>
+
+
+
+
+
+
+    <!-- <div class="pic_container">
+        <div class="" style="">
+            <div class="">
+               <img src="woman_in_images.jpg" alt="">
+            <span style="color: white; float: right; margin: 20px; padding-top: 20px; font-size: larger;
+            margin-right: -210px; position: static; color:white; opacity: 10.5;">125/18/1/0039</span>
+        </div>
+    </div>
+</div> -->
+       
+        <div id="main"> 
+            <div class="pic_container">
+                <span style="font-size:20px; cursor:pointer; color:white; font-size:30px; 
+                margin-left: 20px; position: static;" onclick="openNav()">&#9776;</span>
+                <div class="image_div" style="">
+                       <img src="woman_in_images.jpg" alt="">
+                    <span style="color: white; float: right; margin: 10px; padding-top: 20px; font-size: larger;
+                    margin-right: -210px; position: static; color:white; opacity: 10.5;">125/18/1/0039</span>
+            </div>
+        </div>
+            <!-- <span style="font-size:20px; cursor:pointer; color:white; font-size:30px; 
+            margin-left: 20px; position: static;" onclick="openNav()">&#9776;</span> -->
+            <div class="Acct_dsh">
+                <h3>ACCOUNT DASHBOARD</h3>
+                <h2>125/18/1/0039</h2>
+                <h2>JIMOH MUDHAKIR</h2>
+        
+    </div>
+        <div class="flex_container" id="">
+            <div class="div_flex1" style="float: right;">
+                <div class ="spherical1" style="float: left;">
+                    <span style="color: white; padding: 25px; font-size: xx-large;">
+                        <i class="fa fa-chart-bar"></i>
+                    </span>
+            </div>
+            <span style="text-align:center; float:right;">
+                <h3 style=""><b>Part 3</b></h3>
+                <p style="font-size: large;">level</p>
+        </span>
+        </div>
+        
+        <div class="div_flex1">
+            <div class="spherical2" style="float: left;">
+                <span style="color: white; padding: 20px; font-size: xx-large;">
+                    <i class="fa fa-bullseye"></i>
+                </span>
+            </div>
+            <span style="text-align:center; float:right;">
+                <h3 style=""><b>Computer Major</b></h3>
+                <p style="font-size: large;">Programme</p>
+        </span>
+        </div>
+        
+        <div class="div_flex1">
+            <div class="spherical3" style="float: left;">
+                <span style="color: white; padding: 20px; font-size: xx-large;">
+                    <i class="fa fa-calendar-check"></i>
+                </span>
+
+            </div>
+            <span style="text-align:center; float:right; margin-left: 19%;">
+                <h3 style=""><b>2020/2021</b></h3>
+                <p style="font-size: large;">Current Session</p>
+        </span>
+        </div>
+    </div>
+     <div style="background-color: white; margin: auto; width: 98.5%; border-radius:5px;">
+     <table>
+        <tr>
+            <h3 class="Current_reg" style="padding:15px;">Current Registered Courses</h3>
+          <th>#</th>
+          <th>COURSE CODE</th>
+          <th>COURSE NAME</th>
+          <th>SESSION</th>
+          <th>SEMESTER</th>
+          <th>LEVEL</th>
+          <th>UNIT</th>
+        </tr>
+        <tr>
+            <span class="here">
+          <td>1</td>
+          <td>CSC 301</td>
+          <td>STRUCTURED PROGRAMMING</td>
+          <td>20/21</td>
+          <td>FIRST</td>
+          <td>300L</td>
+          <td>3</td>
+        </tr>
+        </span>
+        <tr>
+          <td>2</td>
+          <td>CSC 310</td>
+          <td>ALGORITHM & COMPLEXITY</td>
+          <td>20/21</td>
+          <td>FIRST</td>
+          <td>300L</td>
+          <td>2</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>CSE 311</td>
+          <td>SPECIAL TOPICS IN...</td>
+          <td>20/21</td>
+          <td>FIRST</td>
+          <td>300L</td>
+          <td>2</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>CSC 321</td>
+          <td>SYSTEM ANALYSIS AND DESIGN</td>
+          <td>20/21</td>
+          <td>FIRST</td>
+          <td>300L</td>
+          <td>3</td>
+        </tr>
+      </table>
+    </div>
+</div>
+</div>
+
+
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("mySidenav").style.backgroundColor = "orange";
+    document.getElementById("main").style.marginLeft = "250px";
+    document.body.style.backgroundColor = rgb(240, 240, 240);
+    // document.getElementById("main").style.overflow = "scroll";
+    // document.getElementById("mySidenav").style.backgroundColor = "red";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = 0;
+    document.getElementById("main").style.marginLeft= 0;
+    // document.body.style.backgroundColor = "red";
+}
+    </script>
+
+<script>
+var dropdown = document.getElementsByClassName("dropdown-btn");
+var i;
+
+for (i = 0; i < dropdown.length; i++) {
+  dropdown[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var dropdownContent = this.nextElementSibling;
+    if (dropdownContent.style.display === "block") {
+      dropdownContent.style.display = "none";
+    } else {
+      dropdownContent.style.display = "block";
+    }
+  });
+}
+</script>
+
+    <!-- <script>
+        var name = {
+            Surname:"JIMOH",
+            Firstname:"Mudhakir"
+            FullName: function(){
+                return this.Surname + " " + this.Firstname;
+            }
+        }
+    </script> -->
+</body>
+</html>

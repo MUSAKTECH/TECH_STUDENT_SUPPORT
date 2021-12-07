@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PADDING RIGHT ANIMATION</title>
+    <style>
+        div{
+            width: 50%;
+            height: 50%;
+            background-color: skyblue;
+            color: black;
+            text-transform: lowercase;
+            /* animation:padding-R 3s infinite; */
+            animation:transf 3s infinite;
+            border:3px solid red;
+        }
+        @keyframes transf{ 
+            /* 50%{padding:12px} */
+            75%{text-transform: uppercase;}
+        }
+    </style>
+</head>
+<body>
+    <div>
+        abcdefghijklmnopqrstuvwxyz
+    </div>
+</body>
+</html>

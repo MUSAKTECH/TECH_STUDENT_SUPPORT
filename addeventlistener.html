@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <p id="demo"></p> -->
+    <button id="myBttn">My name is Button</button>
+    <script>
+        const x = document.getElementById("myBttn");
+        x.addEventListener("click" , myFunction);
+        x.addEventListener("click" , mySecondF);
+        x.addEventListener("click" , myThirdF);
+        x.addEventListener("click" , myFourthF);
+
+
+
+        function myFunction(){
+            alert("Hello guys");
+        }
+        function mySecondF(){
+            alert("I am really appreciated!");
+        }
+        function myThirdF(){
+            alert("Thank you!");
+        }
+        function myFourthF(){
+            alert("Good bye!");
+        }
+    </script>
+</body>
+</html>
