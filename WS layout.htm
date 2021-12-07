@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEBSITE LAYOUT P3</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            margin: 0;
+        }
+        .header{
+            padding: 10px;
+            text-align: center;
+            color: white;
+            background-color: black;
+           
+        }
+        .nav_menu{
+            margin:0;
+            overflow: hidden;
+            background-color: black;
+            margin-top: 5px;
+        }
+        .nav_menu a{
+            padding: 14px 16px;
+            display:block;
+            float: left;
+            text-decoration: none;
+            color: white;
+        }
+        .nav_menu a:hover{
+            background-color: purple;
+        }
+        .column{
+            /* padding:10px; */
+            float: left;
+            color: white;
+
+        }
+        .column_side{
+            width: 25%;
+            padding-left: 10px;
+        }
+        .column_main{
+            width: 50%;
+            padding-left: 10px;
+        }
+        .row:after{
+            content:"";
+            display: table;
+            clear: both;
+        }
+        /* .column_main, .column_side{
+            width: 100%;
+        } */
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>HEADER </h1>
+    </div>
+    <div class="nav_menu">
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+        <a href="#">Link 4</a>
+        <a href="#">Link 5</a>
+        <a href="#">Link 6</a>
+        <a href="#">Link 7</a>
+        <a href="#">Link 8</a>
+        <a href="#">Link 9</a>
+        <a href="#">Link 10</a>
+        <a href="#">Link 11</a>
+    </div>
+    <div class="column_side">
+        <h2>Side 1</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit..</p>
+    </div>
+    <div class="column_main">
+        <h2>Main Content</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+             Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies,
+              eget elementum magna tristique.
+              Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. 
+            Praesent scelerisque tortor sed accumsan convallis.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies,
+                 eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, 
+                 purus leo tincidunt eros, eget luctus quam orci in velit.
+                 Praesent scelerisque tortor sed accumsan convallis.</p>
+    </div>
+    <div class="column_side">
+        <h2>Side 2</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit..</p>
+    </div>
+</body>
+</html>

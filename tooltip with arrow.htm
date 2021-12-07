@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .tooltip{
+            position: relative;
+            border-bottom: 1px dotted red;
+            display: inline-block;
+        }
+        .tooltip-text{
+            background-color: black;
+            text-align: center;
+            color: white;
+            padding: 5px;
+            border-radius: 5px;
+            visibility: hidden;
+            position:absolute;
+            width: 190px;
+            left: 80px;
+            bottom: -5px;
+            margin-top: 130%;
+
+        }
+        .tooltip:hover .tooltip-text{
+            visibility: visible;
+        }
+        .tooltip-text1{
+            background-color: black;
+            text-align: center;
+            color: white;
+            padding: 5px;
+            border-radius: 5px;
+            visibility: hidden;
+            position:absolute;
+            width: 190px;
+            right: 80px;
+            bottom: -5px;
+            margin-top: 130%;
+        }
+        .tooltip:hover .tooltip-text1{
+            visibility: visible;
+        }
+        .tooltip-text::after, .tooltip-text1::after{
+            content: "";
+            border-width: 50px;
+            border-style: solid;
+            border-color: transparent transparent transparent black;
+            left: 39%;
+            margin-left: -40px;
+        }
+
+    </style>
+</head>
+<body style="text-align: center;">
+    <h3>RIGHT TOOLTIP</h3>
+    <p>Move the Oouse Over the text</p>
+    <div class="tooltip">Tooltip-text
+        <span class="tooltip-text">You have Over the right tooltip</span>
+    </div>
+    <br>
+    <h3>LEFT TOOLTIP</h3>
+    <p>Mouse Over the Mouse</p>
+    <div class="tooltip">Tooltip-text
+        <span class="tooltip-text1">You have Over the left tooltip</span>
+    </div>
+    <div></div>
+</body>
+</html>

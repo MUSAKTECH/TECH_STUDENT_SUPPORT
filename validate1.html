@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM VALIDATION 1</title>
+    <script>
+        function form_validation(){
+            var name = document.getElementById("txt").value;
+            var passcode = document.getElementById("psw").value;
+            if(name == ""){
+                alert("You're yet to provide Anything!");
+                document.getElementById("txt").style.border = "2px solid red";
+                return false;
+            }
+                else if(name != "Mudhakir"){
+                    alert("Not the expected input").style.border = "2px solid green";
+                    return false;
+                }
+                // else if(name != "Mudhakir"){
+                // 	message.push("You can Enter Successfully").style.border = "2px solid green";
+                // 	return false;
+                // }
+                else{
+                    alert("You can Enter Successfully");
+                    return true;
+                }
+            // if(passcode.length < 4){
+            //     alert("Your Password must long as 4 characters.");
+            //     return false;
+            //     if(passcode > 1){
+            //         message.push("You can");
+            //         return true;
+            //     }
+            // }
+        }
+    </script>
+    <style>
+        .invalid{
+            color:red;
+            visibility: hidde;
+            display: inline-block;
+            }
+            .invalid:hover{
+                visibility: visible;
+            }
+    </style>
+</head>
+<body>
+    
+    <form name="" method="GET"  action="Tech-U Portal.html" onsubmit="return form_validation()">
+        <div class="">
+            <div>
+        <!-- <label for="name">NAME</label> -->
+        <input type="text" id = "txt"  name="text" placeholder="Your Name"><br>
+        <!-- <div class="invalid" id="">Your name is incorrect!</div> -->
+    </div>
+    <div>
+        <input type="password" class="" id = "psw"  placeholder="4 digit password"><br>
+    </div>
+    <div>
+        <input type="submit" value="Register">
+    </div>
+</div>
+    </form>
+</body>
+</html>

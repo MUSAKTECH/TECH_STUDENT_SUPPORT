@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TESTING FOR FLEX CONATAINER</title>
+    <style>
+        /* *{
+            box-sizing: border-box;
+        }
+        .flex-container{
+            display: flex;
+            background-color: dodgerblue;
+        }
+        .flex-container>div{
+            margin: 10px;
+            padding: 20px;
+            font-size: larger;
+            color:black;
+            background-color: white;
+        } */
+        *{
+            box-sizing: border-box;
+        }
+        .flex-container{
+            display: flex;
+            flex-direction: column;
+            background-color: dodgerblue;
+            width: 100%;
+        }
+        .flex-container>div{
+            margin: 12px;
+            padding: 20px;
+            background-color: white;
+            text-align: center;
+            line-height: 75px;
+            width: 10%;
+        }
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRANSITION ET TRANSFORMATION</title>
+    <style>
+        .div1-transi, .div-2, .div-3, .div-4, .div-5{
+            background-color:blue;
+            width: 100px;
+            height:90px;
+            padding: 20px;
+            color: white;
+            transition:width 3s, height 3s, transform 3s;
+            float: left;
+            margin: 20px;
+        }
+        .div1-transi:hover{
+            background-color: red;
+            width: 200px;
+            height: 200px;
+            transform: rotate();
+        }
+        .div-2:hover{
+            background-color:orange;
+            width: 200px;
+            height: 200px;
+            transform: rotate(90deg);
+        }
+        .div-3:hover{
+            background-color: yellow;
+            width: 200px;
+            height: 200px;
+            transform: rotate(180deg);
+        }
+        .div-4:hover{
+            background-color: green;
+            width: 200px;
+            height: 200px;
+            transform: rotate(270deg);
+        }
+        .div-5:hover{
+            background-color: indigo;
+            width: 200px;
+            height: 200px;
+            transform: rotate(360deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="div1-transi">You just hover me and allow me stretch </div>
+    <div class="div-2">You just hover me and allow me to rotate 90deg</div>
+    <div class="div-3">You just hover me and allow me to rotate 180deg</div>
+    <div class="div-4">You just hover me and allow me to rotate 270deg</div>
+    <div class="div-5">You just hover me and allow me to rotate 360deg</div>
+</body>
+</html>
